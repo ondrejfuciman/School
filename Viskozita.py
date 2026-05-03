@@ -141,7 +141,7 @@ def dynamická_viskozita_měřená_rho_k(rho_l:float,
 
     C_s, d_s, g_s, m_s, rho_l_s, t_avg_s, h_s = sp.symbols('C d g m rho_l t h')
 
-    eta_expr = (2/9)*g_s*(d_s/2)**2*(C*m_s*d**(-3)-rho_l_s)*(t_avg_s/h_s)
+    eta_expr = (2/9)*g_s*(d_s/2)**2*(C*m_s*d_s**(-3)-rho_l_s)*(t_avg_s/h_s)
 
     collapsed_to_value = {
         C_s: C,
